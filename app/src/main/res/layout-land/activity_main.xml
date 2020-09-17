@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/outputTextView"
+        style="@style/EditTextAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:importantForAutofill="no"
+        android:textColor="@color/outputText"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputTextView"
+        style="@style/EditTextAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:importantForAutofill="no"
+        android:textColor="@color/inputText"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputTextView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <fragment
+        android:id="@+id/land_fragment_numbers"
+        android:name="by.bsuir.kulinka.calculator.FragmentNumbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/land_fragment_functions"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline35"
+        tools:layout="@layout/fragment_numbers">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/land_fragment_functions"
+        android:name="by.bsuir.kulinka.calculator.FragmentFunctions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline86"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/land_fragment_numbers"
+        app:layout_constraintTop_toTopOf="@+id/guideline35"
+        tools:layout="@layout/fragment_functions">
+
+    </fragment>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        style="@style/ButtonStyleLand"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn_delete"
+        app:layout_constraintBottom_toTopOf="@+id/buttonClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline86"
+        app:layout_constraintTop_toBottomOf="@+id/inputTextView" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        style="@style/ButtonStyleLand"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btn_clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline86"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDelete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentNumbers">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonFunSin"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/fun_sin"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/buttonFunPercent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFunCos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonFunCos"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/fun_cos"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonFunFactorial"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFunTg"
+            app:layout_constraintStart_toEndOf="@+id/buttonFunSin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonFunTg"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/fun_tg"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonFunSqrt"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFunCtg"
+            app:layout_constraintStart_toEndOf="@+id/buttonFunCos"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/buttonFunCtg"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/fun_ctg"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonFunSquare"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonFunTg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonFunPercent"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/symbol_percent"
+            app:layout_constraintBottom_toTopOf="@+id/buttonFunLg"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFunFactorial"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFunSin" />
+
+        <Button
+            android:id="@+id/buttonFunFactorial"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/fun_factorial"
+            app:layout_constraintBottom_toTopOf="@+id/buttonFunLn"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFunSqrt"
+            app:layout_constraintStart_toEndOf="@+id/buttonFunPercent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFunCos" />
+
+        <Button
+            android:id="@+id/buttonFunSqrt"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/fun_sqrt"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSymbolPI"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFunSquare"
+            app:layout_constraintStart_toEndOf="@+id/buttonFunFactorial"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFunTg" />
+
+        <Button
+            android:id="@+id/buttonFunSquare"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/fun_square"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSymbolExponent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonFunSqrt"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFunCtg" />
+
+        <Button
+            android:id="@+id/buttonFunLg"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/fun_lg"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSymbolLeftBrace"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFunLn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFunPercent" />
+
+        <Button
+            android:id="@+id/buttonFunLn"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/fun_ln"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSymbolRightBrace"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSymbolPI"
+            app:layout_constraintStart_toEndOf="@+id/buttonFunLg"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFunFactorial" />
+
+        <Button
+            android:id="@+id/buttonSymbolPI"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/symbol_PI"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/buttonFunPow"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSymbolExponent"
+            app:layout_constraintStart_toEndOf="@+id/buttonFunLn"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFunSqrt" />
+
+        <Button
+            android:id="@+id/buttonSymbolExponent"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/symbol_exponent"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/buttonDegOrRad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonSymbolPI"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFunSquare" />
+
+        <Button
+            android:id="@+id/buttonSymbolLeftBrace"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/symbol_skobL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSymbolRightBrace"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFunLg" />
+
+        <Button
+            android:id="@+id/buttonSymbolRightBrace"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/symbol_skobR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFunPow"
+            app:layout_constraintStart_toEndOf="@+id/buttonSymbolLeftBrace"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFunLn" />
+
+        <Button
+            android:id="@+id/buttonFunPow"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/fun_pow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonDegOrRad"
+            app:layout_constraintStart_toEndOf="@+id/buttonSymbolRightBrace"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSymbolPI" />
+
+        <Button
+            android:id="@+id/buttonDegOrRad"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/degrees"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonFunPow"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSymbolExponent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

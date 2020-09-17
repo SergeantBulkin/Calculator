@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Стиль для всех кнопок. -->
+    <style name="ButtonStyle" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:color">@color/colorPrimaryDark</item>
+        <item name="materialButtonOutlinedStyle">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="strokeColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="ButtonStyleLand" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:color">@color/colorPrimaryDark</item>
+        <item name="materialButtonOutlinedStyle">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="strokeColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Стиль для текстовых полей -->
+    <style name="EditTextAppearance" parent="Widget.MaterialComponents.TextView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:clickable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">end|center_vertical</item>
+    </style>
+</resources>
