@@ -1,12 +1,13 @@
-package by.bsuir.kulinka.calculator;
+package by.bsuir.kulinka.calculator.fragment;
 
 import android.content.Context;
-import android.content.res.Configuration;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import by.bsuir.kulinka.calculator.interfaces.ExpressionInputInterface;
+import by.bsuir.kulinka.calculator.R;
 
 import android.util.Log;
 import android.view.LayoutInflater;

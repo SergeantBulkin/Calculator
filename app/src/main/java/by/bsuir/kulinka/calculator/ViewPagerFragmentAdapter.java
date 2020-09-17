@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+import by.bsuir.kulinka.calculator.fragment.FragmentFunctions;
+import by.bsuir.kulinka.calculator.fragment.FragmentNumbers;
 
 public class ViewPagerFragmentAdapter extends FragmentStateAdapter
 {

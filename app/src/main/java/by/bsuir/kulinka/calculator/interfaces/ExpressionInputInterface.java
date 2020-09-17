@@ -1,4 +1,4 @@
-package by.bsuir.kulinka.calculator;
+package by.bsuir.kulinka.calculator.interfaces;
 
 //Интерфейс слушателя команд от фрагмента
 public interface ExpressionInputInterface

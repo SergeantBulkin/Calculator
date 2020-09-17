@@ -42,7 +42,7 @@
 
     <fragment
         android:id="@+id/land_fragment_numbers"
-        android:name="by.bsuir.kulinka.calculator.FragmentNumbers"
+        android:name="by.bsuir.kulinka.calculator.fragment.FragmentNumbers"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,7 +56,7 @@
 
     <fragment
         android:id="@+id/land_fragment_functions"
-        android:name="by.bsuir.kulinka.calculator.FragmentFunctions"
+        android:name="by.bsuir.kulinka.calculator.fragment.FragmentFunctions"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

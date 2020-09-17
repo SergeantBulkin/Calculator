@@ -2,7 +2,6 @@ package by.bsuir.kulinka.calculator;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -12,11 +11,11 @@ import com.udojava.evalex.Expression;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
-import java.util.Arrays;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
+import by.bsuir.kulinka.calculator.interfaces.ExpressionInputInterface;
 
 public class MainActivity extends AppCompatActivity implements ExpressionInputInterface
 {
