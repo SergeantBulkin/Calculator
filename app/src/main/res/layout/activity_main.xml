@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backgroundText">
 
     <EditText
         android:id="@+id/outputTextView"
@@ -11,6 +12,7 @@
         android:layout_height="0dp"
         android:textSize="55sp"
         android:textColor="@color/outputText"
+        android:background="@color/backgroundText"
         app:layout_constraintBottom_toTopOf="@+id/inputTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="3"
@@ -25,6 +27,7 @@
         android:layout_height="0dp"
         android:textSize="35sp"
         android:textColor="@color/inputText"
+        android:background="@color/backgroundText"
         app:layout_constraintBottom_toTopOf="@id/guideline35"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
